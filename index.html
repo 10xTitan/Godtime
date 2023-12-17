@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Prayer Times</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+         <div class="container">
+        <h1>Prayer Times</h1>
+        <div id="location"></div>
+        <select id="faithSelect">
+            <option value="islam">Islam</option>
+            <option value="sunni">Sunni Islam</option>
+            <option value="shiite">Shiite Islam</option>
+            <option value="sufism">Sufism</option>
+            <!-- Additional faith options can be added here -->
+        </select>
+        <button id="getTimes">Get Prayer Times</button>
+        <div id="prayerTimes">
+            <table id="infoTable">
+                <!-- Table content will be populated dynamically -->
+            </table>
+        </div>
+    </div>
+        <div id="map" style="height: 400px; width: 100%;"></div> <!-- Map container -->
+    </div>
+    <script src="script.js"></script>
+    <!-- Google Maps JavaScript API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvkejBQIZ3lziniIJ01PFihx_YefLDsOQ&libraries=places&callback=initMap" async defer></script>
+</body>
+</html>
